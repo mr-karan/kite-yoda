@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Kite Yoda",
+    "version": "1.0",
+  
+    "description": "Hides your Kite holdings and displays Yoda's wisdom instead.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://kite.zerodha.com/*"],
+        "js": ["hide_replace.js"]
+      }
+    ]
+
+  }
+  
